@@ -1,0 +1,148 @@
+
+/* General CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+
+header {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* Home Section */
+
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #ffe0b2;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.order-btn {
+    display: inline-block;
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Menu Section */
+
+.menu-section {
+    padding: 30px;
+    text-align: center;
+}
+
+#search {
+    padding: 12px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.food-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Food Card */
+
+.food-card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+.food-card .food-image {
+    font-size: 65px;
+}
+
+.food-card button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Cart Section */
+
+.cart-section {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-section button {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .food-card {
+        width: 100%;
+        max-width: 300px;
+    }
+  }
